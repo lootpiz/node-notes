@@ -1,0 +1,24 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "A note app via Node.js",
+  "main": "app.js",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lootpiz/node-notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lootpiz/node-notes/issues"
+  },
+  "homepage": "https://github.com/lootpiz/node-notes#readme"
+}
