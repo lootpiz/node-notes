@@ -1,5 +1,5 @@
 # node-notes
-A note app via Node.js (feat. My first node app)
+A note app in Node.js (feat. my first node app)
 
 ## Synopsis
 $ node app.js --help
