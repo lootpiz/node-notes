@@ -12,6 +12,11 @@ const loadNotes = () => {
     }
 }
 
+const saveNotes = (notes) => {
+    const notesJSON = JSON.stringify(notes)
+    fs.writeFileSync('notes.json', notesJSON)
+}
+
 const addNote = (title, body) => {
     const notes = loadNotes()
     const duplicateNote = notes.find((note) => note.title === title)
@@ -22,8 +27,7 @@ const addNote = (title, body) => {
             body: body
         }
         notes.push(note)
-        const notesJSON = JSON.stringify(notes)
-        fs.writeFileSync('notes.json', notesJSON)
+        saveNotes(notes)
         console.log(chalk.green.inverse('A note added!'))
     } else {
         console.log(chalk.red.inverse('ERROR: Title taken!'))
